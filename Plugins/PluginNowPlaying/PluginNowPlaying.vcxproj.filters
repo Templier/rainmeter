@@ -25,6 +25,9 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{abad9374-731c-48b4-8ae1-45793b348013}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SDKs\Helium">
+      <UniqueIdentifier>{e03d1f87-4bd2-461e-85fe-a1ae2a3fb01c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SDKs\iTunes\iTunesCOMInterface_i.c">
@@ -95,6 +98,12 @@
     </ClCompile>
     <ClCompile Include="TagLibUnity_ogg.cpp">
       <Filter>taglib</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHelium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKs\Helium\HeliumCOMInterface_i.c">
+      <Filter>SDKs\Helium</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -376,6 +385,12 @@
     </ClInclude>
     <ClInclude Include="taglib\toolkit\tpropertymap.h">
       <Filter>taglib</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerHelium.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKs\Helium\HeliumCOMInterface.h">
+      <Filter>SDKs\Helium</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

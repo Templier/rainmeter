@@ -10,6 +10,7 @@
 #include "Internet.h"
 #include "PlayerAIMP.h"
 #include "PlayerCAD.h"
+#include "PlayerHelium.h"
 #include "PlayerITunes.h"
 #include "PlayerSpotify.h"
 #include "PlayerWinamp.h"
@@ -147,6 +148,9 @@ PLUGIN_EXPORT void Reload(void* data, void* rm, double* maxValue)
 			}
 
 			parent->player = PlayerCAD::Create();
+		}
+		else if (_wcsicmp(L"Helium Music Manager", str) == 0) {
+			parent->player = PlayerHelium::Create();
 		}
 		else if (_wcsicmp(L"iTunes", str) == 0)
 		{
