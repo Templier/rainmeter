@@ -69,6 +69,8 @@ void MeasureRegistry::UpdateValue()
 		{
 			m_Value = 0.0;
 			m_StringValue.clear();
+
+			RegCloseKey(m_RegKey);
 			RegOpenKeyEx(m_HKey, m_RegKeyName.c_str(), 0, KEY_READ, &m_RegKey);
 		}
 
@@ -141,4 +143,3 @@ const WCHAR* MeasureRegistry::GetStringValue()
 {
 	return !m_StringValue.empty() ? CheckSubstitute(m_StringValue.c_str()) : nullptr;
 }
-
